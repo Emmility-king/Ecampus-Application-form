@@ -1,76 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Wellspring University Computing Faculty application form">
-  <title>Computing Faculty Application | Wellspring University</title>
+  <title>Computing Application | Wellspring University</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Wellspring University home"><span class="brand-mark">W</span><span><strong>wellspring</strong><small>university</small></span></a>
-    <div class="header-note"><span class="lock-icon">●</span> Your application is secure</div>
+  <header class="header">
+    <a class="logo" href="#top" aria-label="Wellspring University"><span>W</span><strong>Wellspring <small>University</small></strong></a>
+    <div class="secure"><span>●</span> Secure application</div>
   </header>
-  <main id="top" class="page-shell">
-    <section class="intro" aria-labelledby="page-title">
-      <div><p class="eyebrow">2025 / 2026 admissions</p><h1 id="page-title">Computing Faculty<br><em>Application Form</em></h1><p class="intro-copy">Start your application to study with a community building what comes next. It takes around 10 minutes to complete.</p></div>
-      <div class="deadline-card"><span>Application deadline</span><strong>30 June 2025</strong><small>Applications are reviewed weekly</small></div>
+
+  <main id="top" class="page">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Admissions 2026</p>
+        <h1>Shape what’s<br><em>next.</em></h1>
+        <p>Apply to the Computing Faculty and learn alongside curious minds solving meaningful problems with technology.</p>
+        <div class="hero-meta"><div><strong>10 min</strong><span>average completion</span></div><div><strong>30 Jun</strong><span>application deadline</span></div></div>
+      </div>
+      <div class="hero-pattern" aria-hidden="true"><span>01</span><span>10</span><span>11</span><b>&lt;/&gt;</b></div>
     </section>
-    <div class="form-layout">
-      <aside class="progress-sidebar" aria-label="Application progress">
-        <p class="progress-label">Application steps</p>
-        <ol class="step-list">
-          <li class="step active" data-step="1"><span>01</span><div><strong>Personal details</strong><small>Your contact information</small></div></li>
-          <li class="step" data-step="2"><span>02</span><div><strong>Course choice</strong><small>Choose your programme</small></div></li>
-          <li class="step" data-step="3"><span>03</span><div><strong>Education</strong><small>Your academic history</small></div></li>
-          <li class="step" data-step="4"><span>04</span><div><strong>Review &amp; submit</strong><small>Check your application</small></div></li>
-        </ol>
-        <div class="help-box"><strong>Questions?</strong><p>Our admissions team is ready to help.</p><a href="mailto:admissions@northbridge.edu">Contact admissions <span>↗</span></a></div>
-      </aside>
-      <form class="application-form" id="applicationForm" novalidate>
-        <div class="form-step active" data-panel="1">
-          <div class="form-heading"><div><p class="section-kicker">Step 1 of 4</p><h2>Tell us about yourself</h2><p>We’ll use these details to contact you about your application.</p></div><span class="required-note">* Required fields</span></div>
-          <div class="field-grid">
-            <div class="field"><label for="firstName">First name <sup>*</sup></label><input id="firstName" name="firstName" type="text" autocomplete="given-name" placeholder="e.g. Alex" required><span class="error-message"></span></div>
-            <div class="field"><label for="lastName">Last name <sup>*</sup></label><input id="lastName" name="lastName" type="text" autocomplete="family-name" placeholder="e.g. Morgan" required><span class="error-message"></span></div>
-            <div class="field"><label for="email">Email address <sup>*</sup></label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><span class="error-message"></span></div>
-            <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+234 803 123 4567"><span class="error-message"></span></div>
-            <div class="field"><label for="dob">Date of birth <sup>*</sup></label><input id="dob" name="dob" type="date" autocomplete="bday" required><span class="error-message"></span></div>
-            <div class="field"><label for="country">Country of residence <sup>*</sup></label><select id="country" name="country" required><option value="">Select a country</option><option>United Kingdom</option><option>United States</option><option>Canada</option><option>India</option><option>Nigeria</option><option>Other</option></select><span class="error-message"></span></div>
+
+    <section class="form-card" aria-labelledby="form-title">
+      <div class="form-card-header"><div><p class="eyebrow">Start your application</p><h2 id="form-title">Tell us about yourself</h2><p>Complete the form below. Fields marked <sup>*</sup> are required.</p></div><div class="form-number">01 <span>/ 03</span></div></div>
+      <form id="applicationForm" novalidate>
+        <fieldset>
+          <legend>Personal details</legend>
+          <div class="grid two">
+            <div class="field"><label for="firstName">First name <sup>*</sup></label><input id="firstName" name="firstName" type="text" placeholder="e.g. Alex" autocomplete="given-name" required><small class="error"></small></div>
+            <div class="field"><label for="lastName">Last name <sup>*</sup></label><input id="lastName" name="lastName" type="text" placeholder="e.g. Morgan" autocomplete="family-name" required><small class="error"></small></div>
+            <div class="field"><label for="email">Email address <sup>*</sup></label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required><small class="error"></small></div>
+            <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" placeholder="+234 800 000 0000" autocomplete="tel"><small class="error"></small></div>
           </div>
-        </div>
-        <div class="form-step" data-panel="2">
-          <div class="form-heading"><div><p class="section-kicker">Step 2 of 4</p><h2>Choose your course</h2><p>Tell us what you would like to study at Wellspring University.</p></div></div>
-          <div class="field-grid single-column">
-            <div class="field"><label for="course">Preferred programme <sup>*</sup></label><select id="course" name="course" required><option value="">Select a programme</option><option>BSc Computer Science</option><option>BSc Software Engineering</option><option>BSc Data Science and Artificial Intelligence</option><option>BSc Cyber Security</option><option>BSc Human-Computer Interaction</option></select><span class="error-message"></span></div>
-            <div class="field"><label for="startYear">Preferred start year <sup>*</sup></label><select id="startYear" name="startYear" required><option value="">Select a start year</option><option>2025</option><option>2026</option></select><span class="error-message"></span></div>
-            <fieldset class="field radio-field"><legend>Study mode <sup>*</sup></legend><label><input type="radio" name="mode" value="On campus" required><span><strong>On campus</strong><small>Learn in our Manchester campus community</small></span></label><label><input type="radio" name="mode" value="Online"><span><strong>Online</strong><small>Flexible study from wherever you are</small></span></label></fieldset>
+        </fieldset>
+
+        <fieldset>
+          <legend>Course preferences</legend>
+          <div class="grid two">
+            <div class="field"><label for="course">Preferred programme <sup>*</sup></label><select id="course" name="course" required><option value="">Choose a programme</option><option>BSc Computer Science</option><option>BSc Software Engineering</option><option>BSc Data Science &amp; Artificial Intelligence</option><option>BSc Cyber Security</option><option>BSc Information Technology</option></select><small class="error"></small></div>
+            <div class="field"><label for="startYear">Preferred start year <sup>*</sup></label><select id="startYear" name="startYear" required><option value="">Choose a year</option><option>2026</option><option>2027</option></select><small class="error"></small></div>
           </div>
-        </div>
-        <div class="form-step" data-panel="3">
-          <div class="form-heading"><div><p class="section-kicker">Step 3 of 4</p><h2>Your education</h2><p>Share your most recent academic experience.</p></div></div>
-          <div class="field-grid">
-            <div class="field full-span"><label for="institution">Current or most recent institution <sup>*</sup></label><input id="institution" name="institution" type="text" placeholder="School, college or university" required><span class="error-message"></span></div>
-            <div class="field"><label for="qualification">Highest qualification <sup>*</sup></label><select id="qualification" name="qualification" required><option value="">Select qualification</option><option>A Levels</option><option>International Baccalaureate</option><option>Access to Higher Education</option><option>Undergraduate degree</option><option>Other</option></select><span class="error-message"></span></div>
-            <div class="field"><label for="grade">Predicted or achieved grade <sup>*</sup></label><input id="grade" name="grade" type="text" placeholder="e.g. AAB or 34 points" required><span class="error-message"></span></div>
-            <div class="field full-span"><label for="statement">Why do you want to study computing?</label><textarea id="statement" name="statement" rows="5" maxlength="500" placeholder="Tell us a little about your interests and ambitions..."></textarea><small class="character-count">0 / 500</small></div>
+          <div class="field mode-field"><label>Preferred study mode <sup>*</sup></label><div class="choice-row"><label class="choice"><input type="radio" name="mode" value="On campus" required><span><b>On campus</b><small>Full campus experience</small></span></label><label class="choice"><input type="radio" name="mode" value="Online"><span><b>Online</b><small>Flexible remote study</small></span></label></div><small class="error mode-error"></small></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Academic background</legend>
+          <div class="grid two">
+            <div class="field full"><label for="institution">Most recent school or college <sup>*</sup></label><input id="institution" name="institution" type="text" placeholder="Enter institution name" required><small class="error"></small></div>
+            <div class="field"><label for="qualification">Highest qualification <sup>*</sup></label><select id="qualification" name="qualification" required><option value="">Choose qualification</option><option>Secondary school certificate</option><option>A Levels</option><option>International Baccalaureate</option><option>National Diploma</option><option>Undergraduate degree</option><option>Other</option></select><small class="error"></small></div>
+            <div class="field"><label for="grade">Grade or result <sup>*</sup></label><input id="grade" name="grade" type="text" placeholder="e.g. AAB or 3.6 GPA" required><small class="error"></small></div>
           </div>
-        </div>
-        <div class="form-step" data-panel="4">
-          <div class="form-heading"><div><p class="section-kicker">Step 4 of 4</p><h2>Review and submit</h2><p>Almost there. Confirm your details before sending your application.</p></div></div>
-          <div class="review-card" id="reviewCard"></div>
-          <label class="consent"><input id="consent" type="checkbox" required><span>I confirm that the information provided is accurate and understand that Wellspring University may contact me about this application. <sup>*</sup></span></label><span class="error-message consent-error"></span>
-        </div>
-        <div class="form-footer"><button type="button" class="back-button" id="backButton" hidden>← Back</button><div class="footer-actions"><span class="save-note">⌁ Your progress is saved automatically</span><button type="button" class="primary-button" id="nextButton">Continue <span>→</span></button></div></div>
-        <div class="success-message" id="successMessage" role="status" tabindex="-1"><span class="success-icon">✓</span><div><strong>Application submitted successfully</strong><p>Thank you. We’ll email you shortly with your application reference number.</p></div></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Personal statement <span>Optional</span></legend>
+          <div class="field"><label for="statement">Why do you want to study computing?</label><textarea id="statement" name="statement" rows="5" maxlength="600" placeholder="Tell us about your interests, experience, and goals..."></textarea><div class="counter"><small>Maximum 600 characters</small><small id="characterCount">0 / 600</small></div></div>
+        </fieldset>
+
+        <div class="consent"><input id="consent" type="checkbox" required><label for="consent">I confirm that the information provided is accurate. <sup>*</sup></label></div>
+        <p class="form-error" id="formError" role="alert"></p>
+        <div class="form-actions"><span>🔒 Your information is protected</span><button class="submit-button" type="submit">Submit application <b>→</b></button></div>
       </form>
-    </div>
+      <div class="success" id="successMessage" role="status" tabindex="-1"><b>✓</b><div><strong>Application received</strong><p>Thank you. Your application has been submitted successfully.</p></div></div>
+    </section>
   </main>
-  <footer class="site-footer"><span>© 2026 Wellspring University</span><span><a href="#privacy">Privacy</a><a href="#accessibility">Accessibility</a></span></footer>
+  <footer class="footer"><span>© 2026 Wellspring University</span><span><a href="#privacy">Privacy</a><a href="#accessibility">Accessibility</a></span></footer>
   <script src="script.js"></script>
 </body>
 </html>
