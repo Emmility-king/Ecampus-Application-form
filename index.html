@@ -43,18 +43,90 @@
         <fieldset>
           <legend>Course preferences</legend>
           <div class="grid two">
-            <div class="field"><label for="course">Preferred programme <sup>*</sup></label><select id="course" name="course" required><option value="">Choose a programme</option><option>BSc Computer Science</option><option>BSc Software Engineering</option><option>BSc Data Science &amp; Artificial Intelligence</option><option>BSc Cyber Security</option><option>BSc Information Technology</option></select><small class="error"></small></div>
+            <div class="field"><label for="course">Preferred programme <sup>*</sup></label><select id="course" name="course" required><option value="">Choose a programme</option><option>BSc Computer Science</option><option>BSc Software Engineering</option><option>BSc Data Science</option><option>BSc Cyber Security</option><option>BSc Information Technology</option></select><small class="error"></small></div>
             <div class="field"><label for="startYear">Preferred start year <sup>*</sup></label><select id="startYear" name="startYear" required><option value="">Choose a year</option><option>2026</option><option>2027</option></select><small class="error"></small></div>
           </div>
-          <div class="field mode-field"><label>Preferred study mode <sup>*</sup></label><div class="choice-row"><label class="choice"><input type="radio" name="mode" value="On campus" required><span><b>On campus</b><small>Full campus experience</small></span></label><label class="choice"><input type="radio" name="mode" value="Online"><span><b>Online</b><small>Flexible remote study</small></span></label></div><small class="error mode-error"></small></div>
+          <!-- <div class="field mode-field"><label>Preferred study mode <sup>*</sup></label><div class="choice-row"><label class="choice"><input type="radio" name="mode" value="On campus" required><span><b>On campus</b><small>Full campus experience</small></span></label><label class="choice"><input type="radio" name="mode" value="Online"><span><b>Online</b><small>Flexible remote study</small></span></label></div><small class="error mode-error"></small></div> -->
         </fieldset>
 
         <fieldset>
           <legend>Academic background</legend>
-          <div class="grid two">
-            <div class="field full"><label for="institution">Most recent school or college <sup>*</sup></label><input id="institution" name="institution" type="text" placeholder="Enter institution name" required><small class="error"></small></div>
+          <!-- <div class="grid two"> -->
+            <!-- <div class="field full"><label for="institution">Most recent school or college <sup>*</sup></label><input id="institution" name="institution" type="text" placeholder="Enter institution name" required><small class="error"></small></div>
             <div class="field"><label for="qualification">Highest qualification <sup>*</sup></label><select id="qualification" name="qualification" required><option value="">Choose qualification</option><option>Secondary school certificate</option><option>A Levels</option><option>International Baccalaureate</option><option>National Diploma</option><option>Undergraduate degree</option><option>Other</option></select><small class="error"></small></div>
             <div class="field"><label for="grade">Grade or result <sup>*</sup></label><input id="grade" name="grade" type="text" placeholder="e.g. AAB or 3.6 GPA" required><small class="error"></small></div>
+          </div> -->
+        </fieldset>
+
+        <fieldset class="academic-qualifications">
+          <div class="qualification-setting">
+            <h3>Setting 1</h3>
+
+            <div class="qualification-grid">
+              <div class="qual-field">
+                <label>Exam type</label>
+                <div class="select-wrap">
+                  <select>
+                    <option>WASSCE</option>
+                    <option>NECO</option>
+                    <option>GCE</option>
+                    <option>IGCSE</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="qual-field">
+                <label>Exam year</label>
+                <input type="text" placeholder="e.g. 2015" required>
+              </div>
+
+              <div class="qual-field">
+                <label>Exam number <span>Required</span></label>
+                <input type="text" placeholder="Candidate number" required>
+              </div>
+            </div>
+
+            <div class="subject-list">
+              <div class="subject-row">
+                <div class="subject-name">English Language</div>
+                <div class="subject-grade select-wrap small-select">
+                  <select>
+                    <option>Grade</option>
+                    <option>A1</option>
+                    <option>B2</option>
+                    <option>B3</option>
+                    <option>C4</option>
+                    <option>C5</option>
+                    <option>C6</option>
+                    <option>D7</option>
+                    <option>E8</option>
+                    <option>F9</option>
+                  </select>
+                </div>
+                <button type="button" class="remove-row">Remove</button>
+              </div>
+
+              <div class="subject-row">
+                <div class="subject-name">Mathematics</div>
+                <div class="subject-grade select-wrap small-select">
+                  <select>
+                    <option>Grade</option>
+                    <option>A1</option>
+                    <option>B2</option>
+                    <option>B3</option>
+                    <option>C4</option>
+                    <option>C5</option>
+                    <option>C6</option>
+                    <option>D7</option>
+                    <option>E8</option>
+                    <option>F9</option>
+                  </select>
+                </div>
+                <button type="button" class="remove-row">Remove</button>
+              </div>
+            </div>
+
+            <button type="button" class="primary-button add-subject-btn">Add subject</button>
           </div>
         </fieldset>
 
